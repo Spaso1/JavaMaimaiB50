@@ -2,9 +2,8 @@ package org.ast.b50.controller;
 
 
 import com.google.gson.Gson;
+
 import jakarta.annotation.PostConstruct;
-import jakarta.servlet.http.HttpSession;
-import okhttp3.OkHttpClient;
 import org.ast.b50.been.faker.*;
 import org.ast.b50.been.lx.Difficulty;
 import org.ast.b50.been.lx.LxSongList;
@@ -48,8 +47,6 @@ public class ApiB50 {
     @Autowired
     MaimaiImageService maimaiImageService;
     private Map<Integer, Song> songs = new HashMap<>();
-
-    @PostConstruct
     public void init() {
         try {
             String url = "https://maimai.lxns.net/api/v0/maimai/song/list";
