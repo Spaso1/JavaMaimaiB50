@@ -97,6 +97,8 @@
 }
 ```
 当然,每项数据都不一定必须,必须的有musicId ,musicName,level,level_info,achievement,type
+## ratingList 是b35
+## newratingList 是b15
 
 `然后就是用户数据`
 
